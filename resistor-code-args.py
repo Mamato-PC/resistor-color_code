@@ -102,9 +102,6 @@ else:
             elif str(hasil)[3:] == "000000000":
                 print("Result: %s ohm" % str(hasil // 1000000000))
                 print(f"Tolerance: {tolerance_value}% ({tolerance_input})")
-            elif len(str(hasil)) == 4:
-                print("Result: %.1f ohm" % (float(hasil) // 1000))
-                print(f"Tolerance: {tolerance_value}% ({tolerance_input})")
             else:
                 print("Result: %d ohm" % (hasil))
                 print(f"Tolerance: {tolerance_value}% ({tolerance_input})")
@@ -167,9 +164,6 @@ else:
                 print(f"Tolerance: {tolerance_value}% ({tolerance_input})") 
             elif str(hasil)[3:] == "000000000":
                 print("Result: %s ohm" % str(hasil // 1000000000))
-                print(f"Tolerance: {tolerance_value}% ({tolerance_input})")
-            elif len(str(hasil)) == 4:
-                print("Result: %.1f ohm" % (hasil // 1000.0))
                 print(f"Tolerance: {tolerance_value}% ({tolerance_input})")
             else:
                 print("Result: %d ohm" % (hasil))
